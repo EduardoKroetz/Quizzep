@@ -7,6 +7,7 @@ import styles from "./page.module.css"
 import Link from "next/link";
 import { User } from "../classes/classes";
 import { UserInterface } from "../interfaces/interfaces";
+import { useAuth } from "@/hooks/useAuth";
 
 
 
@@ -19,6 +20,7 @@ export default function Register(){
   const [toastSucessIsOpen,setToastSucessIsOpen] = useState(false)
   const [toastErrorIsOpen,setToastErrorIsOpen] = useState(false)
 
+  const { setIsAuthenticated } = useAuth()
 
   async function handlerRegister(ev:FormEvent){
     ev.preventDefault()
@@ -43,6 +45,8 @@ export default function Register(){
     newUser.id = id
 
     localStorage.setItem('user',JSON.stringify(newUser))
+    setIsAuthenticated(true)
+    
     setToastSucessIsOpen(true)
     setTimeout(()=>{
       window.open("../", "_self")

@@ -6,6 +6,8 @@ import { FormEvent, useState } from "react";
 import styles from "./page.module.css"
 import Link from "next/link";
 import { UserInterface } from "../interfaces/interfaces";
+import { useAuth } from "@/hooks/useAuth";
+import { useUser } from "@/hooks/useUsers";
 
 
 
@@ -16,15 +18,18 @@ export default function Register(){
   const [toastSucessIsOpen,setToastSucessIsOpen] = useState(false)
   const [toastErrorIsOpen,setToastErrorIsOpen] = useState(false)
 
+  const { setIsAuthenticated } = useAuth()
+  const { setUser } = useUser()
 
   async function handlerLogin(ev:FormEvent){
     ev.preventDefault()
 
     const users: UserInterface[] = await fetch("http://localhost:3001/users").then(res => res.json())
     const userFound = users.find((user)=> user.email === email && user.password === password)
-    console.log(userFound)
     if (userFound){
       setToastSucessIsOpen(true)
+      setUser(userFound)
+      setIsAuthenticated(true)
       setTimeout(()=>{
         window.open("../", "_self")
       },500)
