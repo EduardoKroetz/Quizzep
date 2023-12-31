@@ -1,15 +1,14 @@
-import type { Metadata } from 'next'
+"use client"
+
 import { Inter } from 'next/font/google'
 import './globals.css'
 import "bootstrap/dist/css/bootstrap.min.css"
+import Header from "@/components/Header";
+import { AuthContextProvider } from "@/hooks/useAuth";
+import { UserContextProvider } from "@/hooks/useUsers";
+import { QuizzesContextProvider } from '@/hooks/useQuizzes';
 
 const inter = Inter({ subsets: ['latin'] })
-
-export const metadata: Metadata = {
-
-  title: 'Quizzep',
-  description: 'Quizzep - Home',
-}
 
 export default function RootLayout({
   children,
@@ -17,8 +16,24 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
+
     <html lang="pt-br">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <title>Quizzep</title>
+      </head>
+      <body className={inter.className}>
+        <AuthContextProvider>
+          <QuizzesContextProvider>
+            <UserContextProvider>
+              <Header/>
+              {children}
+            </UserContextProvider>
+          </QuizzesContextProvider>
+        </AuthContextProvider>
+      </body>
     </html>
+    
+
+ 
   )
 }
