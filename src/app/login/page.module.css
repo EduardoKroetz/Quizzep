@@ -1,0 +1,25 @@
+
+.loginContainer {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.475), white);
+}
+.loginContainer button {
+  max-width: 150px;
+  margin: 0 auto;
+}
+.loginContainer a {
+  margin: 0 auto;
+}
+
+.loginContainer > section {
+
+  max-width: 500px;
+}
+
+.loginContainer > form {
+  display: flex;
+  flex-direction: column;
+
+
+}

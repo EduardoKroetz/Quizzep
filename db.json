@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "name": "Eduardo",
+      "email": "eduardokroetz0@gmail.com",
+      "password": "123",
+      "quizzes": [],
+      "id": 0
+    },
+    {
+      "name": "Eduardo Oscar Wagner Kroetz",
+      "email": "eduardokroetz0@gmail.com",
+      "password": "123",
+      "quizzes": [],
+      "id": 1
+    }
+  ],
+  "quizzes": []
+}
