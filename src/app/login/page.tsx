@@ -5,7 +5,7 @@ import SuccessToast from "@/components/SuccessToast";
 import { FormEvent, useState } from "react";
 import styles from "./page.module.css"
 import Link from "next/link";
-import { UserInterface } from "../interfaces/interfaces";
+import { UserInterface } from "../../interfaces/interfaces";
 import { useAuth } from "@/hooks/useAuth";
 import { useUser } from "@/hooks/useUsers";
 

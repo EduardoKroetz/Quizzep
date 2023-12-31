@@ -1,16 +1,20 @@
+"use client"
+
+import Header from "@/components/Header";
 import { AuthContextProvider } from "@/hooks/useAuth";
-import { QuizzesContextProvider } from "@/hooks/useQuizzes";
+import { QuizzesContextProvider, useQuizzes } from "@/hooks/useQuizzes";
 import { UserContextProvider } from "@/hooks/useUsers";
 
 
 export default function Home() {
+  const { quizzes } = useQuizzes()
+
+
   return (
     <AuthContextProvider>
         <QuizzesContextProvider>
             <UserContextProvider>
-                <main>
-                  
-                </main>
+                <Header/>
             </UserContextProvider>
         </QuizzesContextProvider>
     </AuthContextProvider>

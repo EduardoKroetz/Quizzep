@@ -1,7 +1,7 @@
 // src/hooks/useUsers
 "use client"
 
-import { Quizz, UserInterface } from "@/app/interfaces/interfaces";
+import { Quizz, UserInterface } from "@/interfaces/interfaces";
 import React, { createContext, Dispatch, ReactNode, SetStateAction, useContext, useEffect, useState } from "react";
 
 interface UserContextProps {
