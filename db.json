@@ -4,7 +4,38 @@
       "name": "Eduardo",
       "email": "eduardokroetz0@gmail.com",
       "password": "123",
-      "quizzes": [],
+      "quizzes": [
+        {
+          "title": "Quiz sobre lógica de programação",
+          "category": "TI",
+          "description": "Quiz sobre lógica de programação, conceitos básicos.",
+          "questions": [
+            {
+              "text": "O que é o 'for'",
+              "options": [
+                "estrutura de repetição",
+                "estrutura condicional",
+                "estrutura 'para'",
+                "looping infinito"
+              ],
+              "correctOption": 1
+            },
+            {
+              "text": "O que é a 'if'",
+              "options": [
+                "estrutura de repetição",
+                "estrutura condicional",
+                "quer dizer 'se'",
+                "ES6"
+              ],
+              "correctOption": 2
+            }
+          ],
+          "createdBy": "Eduardo",
+          "time": 60,
+          "id": 1
+        }
+      ],
       "id": 0
     },
     {
@@ -75,468 +106,64 @@
       "id": 1
     },
     {
-      "title": "abelhas",
-      "category": "insetos",
-      "description": "abelhas no mundo",
-      "id": 0,
+      "title": "a",
+      "category": "a",
+      "description": "a",
       "questions": [
         {
-          "text": "Qual o tipo mais comum de abelha na America?",
+          "text": "a",
           "options": [
-            "Africana",
-            "americana",
-            "japonesa",
-            "brasileira"
-          ],
-          "correctOption": 2
-        },
-        {
-          "text": "Qual o tipo mais comum de abelha no Japao?",
-          "options": [
-            "Africana",
-            "americana",
-            "japonesa",
-            "brasileira"
-          ],
-          "correctOption": 3
-        }
-      ]
-    },
-    {
-      "title": "Quiz sobre lógica de programação",
-      "category": "TI",
-      "description": "Quiz sobre lógica de programação, conceitos básicos.",
-      "questions": [
-        {
-          "text": "O que é o 'for'",
-          "options": [
-            "estrutura de repetição",
-            "estrutura condicional",
-            "estrutura 'para'",
-            "looping infinito"
+            "1",
+            "2",
+            "3",
+            "4"
           ],
           "correctOption": 1
         },
         {
-          "text": "O que é a 'if'",
+          "text": "b",
           "options": [
-            "estrutura de repetição",
-            "estrutura condicional",
-            "quer dizer 'se'",
-            "ES6"
+            "1",
+            "2",
+            "3",
+            "4"
           ],
           "correctOption": 2
         }
       ],
       "createdBy": "Eduardo",
       "time": 60,
-      "id": 1
+      "id": 2
     },
     {
-      "title": "abelhas",
-      "category": "insetos",
-      "description": "abelhas no mundo",
-      "id": 0,
+      "title": "b",
+      "category": "b",
+      "description": "b",
       "questions": [
         {
-          "text": "Qual o tipo mais comum de abelha na America?",
+          "text": "b",
           "options": [
-            "Africana",
-            "americana",
-            "japonesa",
-            "brasileira"
+            "1",
+            "2",
+            "3",
+            "4"
           ],
           "correctOption": 2
         },
         {
-          "text": "Qual o tipo mais comum de abelha no Japao?",
+          "text": "c",
           "options": [
-            "Africana",
-            "americana",
-            "japonesa",
-            "brasileira"
+            "1",
+            "2",
+            "3",
+            "4"
           ],
           "correctOption": 3
-        }
-      ]
-    },
-    {
-      "title": "Quiz sobre lógica de programação",
-      "category": "TI",
-      "description": "Quiz sobre lógica de programação, conceitos básicos.",
-      "questions": [
-        {
-          "text": "O que é o 'for'",
-          "options": [
-            "estrutura de repetição",
-            "estrutura condicional",
-            "estrutura 'para'",
-            "looping infinito"
-          ],
-          "correctOption": 1
-        },
-        {
-          "text": "O que é a 'if'",
-          "options": [
-            "estrutura de repetição",
-            "estrutura condicional",
-            "quer dizer 'se'",
-            "ES6"
-          ],
-          "correctOption": 2
         }
       ],
       "createdBy": "Eduardo",
       "time": 60,
-      "id": 1
-    },
-    {
-      "title": "abelhas",
-      "category": "insetos",
-      "description": "abelhas no mundo",
-      "id": 0,
-      "questions": [
-        {
-          "text": "Qual o tipo mais comum de abelha na America?",
-          "options": [
-            "Africana",
-            "americana",
-            "japonesa",
-            "brasileira"
-          ],
-          "correctOption": 2
-        },
-        {
-          "text": "Qual o tipo mais comum de abelha no Japao?",
-          "options": [
-            "Africana",
-            "americana",
-            "japonesa",
-            "brasileira"
-          ],
-          "correctOption": 3
-        }
-      ]
-    },
-    {
-      "title": "Quiz sobre lógica de programação",
-      "category": "TI",
-      "description": "Quiz sobre lógica de programação, conceitos básicos.",
-      "questions": [
-        {
-          "text": "O que é o 'for'",
-          "options": [
-            "estrutura de repetição",
-            "estrutura condicional",
-            "estrutura 'para'",
-            "looping infinito"
-          ],
-          "correctOption": 1
-        },
-        {
-          "text": "O que é a 'if'",
-          "options": [
-            "estrutura de repetição",
-            "estrutura condicional",
-            "quer dizer 'se'",
-            "ES6"
-          ],
-          "correctOption": 2
-        }
-      ],
-      "createdBy": "Eduardo",
-      "time": 60,
-      "id": 1
-    },
-    {
-      "title": "abelhas",
-      "category": "insetos",
-      "description": "abelhas no mundo",
-      "id": 0,
-      "questions": [
-        {
-          "text": "Qual o tipo mais comum de abelha na America?",
-          "options": [
-            "Africana",
-            "americana",
-            "japonesa",
-            "brasileira"
-          ],
-          "correctOption": 2
-        },
-        {
-          "text": "Qual o tipo mais comum de abelha no Japao?",
-          "options": [
-            "Africana",
-            "americana",
-            "japonesa",
-            "brasileira"
-          ],
-          "correctOption": 3
-        }
-      ]
-    },
-    {
-      "title": "Quiz sobre lógica de programação",
-      "category": "TI",
-      "description": "Quiz sobre lógica de programação, conceitos básicos.",
-      "questions": [
-        {
-          "text": "O que é o 'for'",
-          "options": [
-            "estrutura de repetição",
-            "estrutura condicional",
-            "estrutura 'para'",
-            "looping infinito"
-          ],
-          "correctOption": 1
-        },
-        {
-          "text": "O que é a 'if'",
-          "options": [
-            "estrutura de repetição",
-            "estrutura condicional",
-            "quer dizer 'se'",
-            "ES6"
-          ],
-          "correctOption": 2
-        }
-      ],
-      "createdBy": "Eduardo",
-      "time": 60,
-      "id": 1
-    },
-    {
-      "title": "abelhas",
-      "category": "insetos",
-      "description": "abelhas no mundo",
-      "id": 0,
-      "questions": [
-        {
-          "text": "Qual o tipo mais comum de abelha na America?",
-          "options": [
-            "Africana",
-            "americana",
-            "japonesa",
-            "brasileira"
-          ],
-          "correctOption": 2
-        },
-        {
-          "text": "Qual o tipo mais comum de abelha no Japao?",
-          "options": [
-            "Africana",
-            "americana",
-            "japonesa",
-            "brasileira"
-          ],
-          "correctOption": 3
-        }
-      ]
-    },
-    {
-      "title": "Quiz sobre lógica de programação",
-      "category": "TI",
-      "description": "Quiz sobre lógica de programação, conceitos básicos.",
-      "questions": [
-        {
-          "text": "O que é o 'for'",
-          "options": [
-            "estrutura de repetição",
-            "estrutura condicional",
-            "estrutura 'para'",
-            "looping infinito"
-          ],
-          "correctOption": 1
-        },
-        {
-          "text": "O que é a 'if'",
-          "options": [
-            "estrutura de repetição",
-            "estrutura condicional",
-            "quer dizer 'se'",
-            "ES6"
-          ],
-          "correctOption": 2
-        }
-      ],
-      "createdBy": "Eduardo",
-      "time": 60,
-      "id": 1
-    },
-    {
-      "title": "abelhas",
-      "category": "insetos",
-      "description": "abelhas no mundo",
-      "id": 0,
-      "questions": [
-        {
-          "text": "Qual o tipo mais comum de abelha na America?",
-          "options": [
-            "Africana",
-            "americana",
-            "japonesa",
-            "brasileira"
-          ],
-          "correctOption": 2
-        },
-        {
-          "text": "Qual o tipo mais comum de abelha no Japao?",
-          "options": [
-            "Africana",
-            "americana",
-            "japonesa",
-            "brasileira"
-          ],
-          "correctOption": 3
-        }
-      ]
-    },
-    {
-      "title": "Quiz sobre lógica de programação",
-      "category": "TI",
-      "description": "Quiz sobre lógica de programação, conceitos básicos.",
-      "questions": [
-        {
-          "text": "O que é o 'for'",
-          "options": [
-            "estrutura de repetição",
-            "estrutura condicional",
-            "estrutura 'para'",
-            "looping infinito"
-          ],
-          "correctOption": 1
-        },
-        {
-          "text": "O que é a 'if'",
-          "options": [
-            "estrutura de repetição",
-            "estrutura condicional",
-            "quer dizer 'se'",
-            "ES6"
-          ],
-          "correctOption": 2
-        }
-      ],
-      "createdBy": "Eduardo",
-      "time": 60,
-      "id": 1
-    },
-    {
-      "title": "abelhas",
-      "category": "insetos",
-      "description": "abelhas no mundo",
-      "id": 0,
-      "questions": [
-        {
-          "text": "Qual o tipo mais comum de abelha na America?",
-          "options": [
-            "Africana",
-            "americana",
-            "japonesa",
-            "brasileira"
-          ],
-          "correctOption": 2
-        },
-        {
-          "text": "Qual o tipo mais comum de abelha no Japao?",
-          "options": [
-            "Africana",
-            "americana",
-            "japonesa",
-            "brasileira"
-          ],
-          "correctOption": 3
-        }
-      ]
-    },
-    {
-      "title": "Quiz sobre lógica de programação",
-      "category": "TI",
-      "description": "Quiz sobre lógica de programação, conceitos básicos.",
-      "questions": [
-        {
-          "text": "O que é o 'for'",
-          "options": [
-            "estrutura de repetição",
-            "estrutura condicional",
-            "estrutura 'para'",
-            "looping infinito"
-          ],
-          "correctOption": 1
-        },
-        {
-          "text": "O que é a 'if'",
-          "options": [
-            "estrutura de repetição",
-            "estrutura condicional",
-            "quer dizer 'se'",
-            "ES6"
-          ],
-          "correctOption": 2
-        }
-      ],
-      "createdBy": "Eduardo",
-      "time": 60,
-      "id": 1
-    },
-    {
-      "title": "abelhas",
-      "category": "insetos",
-      "description": "abelhas no mundo",
-      "id": 0,
-      "questions": [
-        {
-          "text": "Qual o tipo mais comum de abelha na America?",
-          "options": [
-            "Africana",
-            "americana",
-            "japonesa",
-            "brasileira"
-          ],
-          "correctOption": 2
-        },
-        {
-          "text": "Qual o tipo mais comum de abelha no Japao?",
-          "options": [
-            "Africana",
-            "americana",
-            "japonesa",
-            "brasileira"
-          ],
-          "correctOption": 3
-        }
-      ]
-    },
-    {
-      "title": "Quiz sobre lógica de programação",
-      "category": "TI",
-      "description": "Quiz sobre lógica de programação, conceitos básicos.Quiz sobre lógica de programação, conceitos básicos.Quiz sobre lógica de programação, conceitos básicos.Quiz sobre lógica de programação, conceitos básicos.Quiz sobre lógica de programação, conceitos básicos.Quiz sobre lógica de programação, conceitos básicos.Quiz sobre lógica de programação, conceitos básicos.Quiz sobre lógica de programação, conceitos básicos.Quiz sobre lógica de programação, conceitos básicos.",
-      "questions": [
-        {
-          "text": "O que é o 'for'",
-          "options": [
-            "estrutura de repetição",
-            "estrutura condicional",
-            "estrutura 'para'",
-            "looping infinito"
-          ],
-          "correctOption": 1
-        },
-        {
-          "text": "O que é a 'if'",
-          "options": [
-            "estrutura de repetição",
-            "estrutura condicional",
-            "quer dizer 'se'",
-            "ES6"
-          ],
-          "correctOption": 2
-        }
-      ],
-      "createdBy": "Eduardo",
-      "time": 60,
-      "id": 1
+      "id": 3
     }
   ]
 }

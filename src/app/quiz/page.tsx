@@ -8,6 +8,7 @@ import "./style.css"
 import { useUser } from "@/hooks/useUsers"
 import Quizz from "@/classes/Quizz"
 import Link from "next/link"
+import SuccessToast from "@/components/SuccessToast"
 
 export default function Quiz(){
   const [title,setTitle] = useState('')
@@ -16,6 +17,7 @@ export default function Quiz(){
   const [timeQuiz, setTimeQuiz] = useState(60)
   const [qtdQuests,setQtdQuests] = useState(2)
   const [renderQuestsState,setRenderQuestsState] = useState(false)
+  const [toastSucessIsOpen,setToastSucessIsOpen] = useState(false)
   
   const {user,setUser}  = useUser() as {user:UserInterface,setUser:Dispatch<SetStateAction<UserInterface>>}
 
@@ -93,7 +95,14 @@ export default function Quiz(){
       body:JSON.stringify(user)
     })
 
+    setCategory('')
+    setDescription('')
+    setQtdQuests(2)
+    setRenderQuestsState(false)
+    setTimeQuiz(60)
+    setTitle('')
 
+    setToastSucessIsOpen(true)
   }
 
 
@@ -186,6 +195,7 @@ export default function Quiz(){
         )}
        
       </section> 
+      <SuccessToast text="Quiz criado com sucesso!"  setToastIsOpen={setToastSucessIsOpen} toastIsOpen={toastSucessIsOpen}/>
     </main>
   )
 }
