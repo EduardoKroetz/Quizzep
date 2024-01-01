@@ -24,7 +24,9 @@ export const UserContextProvider = (props:{
   },[])
 
   useEffect(()=>{
-    localStorage.setItem('user',JSON.stringify(user))
+    if (user){
+      localStorage.setItem('user',JSON.stringify(user))
+    }
   },[user])
 
 

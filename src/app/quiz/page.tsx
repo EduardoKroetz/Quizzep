@@ -63,16 +63,17 @@ export default function Quiz(){
 
     const newQuizz = new Quizz(title,category,description,arrQuests,user?.name,timeQuiz) //cria um novo quiz com os dados
 
-
+    //coloca o quiz no json-server
     const response = await fetch("http://localhost:3001/quizzes",{
       method:"POST",
       headers: {
-        "Content-Type":"applicattion/json"
+        "Content-Type":"application/json"
       },
       body:JSON.stringify(newQuizz)
     })
     const { id } = await response.json()
     newQuizz.id = id
+
 
     setUser((prevUser) => {
       if (prevUser) {
@@ -82,7 +83,19 @@ export default function Quiz(){
       }
       return prevUser;
     });
+
+    //modifica o usuário(coloca o quiz criado no usuário)
+    await fetch(`http://localhost:3001/users/${user.id}`,{
+      method:"PUT",
+      headers:{
+        "Content-Type":"application/json"
+      },
+      body:JSON.stringify(user)
+    })
+
+
   }
+
 
 
 
@@ -101,7 +114,7 @@ export default function Quiz(){
 
   return (
     <main className={`${styles.createQuizContainer} row m-0 p-0`}>
-      <form onSubmit={(ev)=> renderQuests(ev)} className={`${styles.createQuizForm} createQuizForm col-12 col-md-6`} >
+      <form onSubmit={(ev)=> renderQuests(ev)} className={`${styles.createQuizForm} createQuizForm col-12 col-md-6 col-lg-4`} >
         <section>
           <label htmlFor="title">Título</label>
           <input type="text" id="title"
@@ -142,7 +155,7 @@ export default function Quiz(){
         </section>
         <button type="submit" className="btn btn-info">Carregar perguntas</button>
       </form>
-      <section className={`${styles.showQuests} col-md-6 col-12`}>
+      <section className={`${styles.showQuests} col-md-6 col-12 col-lg-8`}>
         {renderQuestsState && (
           <> {/* Itera sobre a quantidade de quests e renderiza os componentes */}
             {Array.from({length: qtdQuests},(_,index) => (
@@ -162,7 +175,7 @@ export default function Quiz(){
                     <input type="text" className="col-2 m-1  responseQuestInput"/>
                   </div>
                   <div className="rightResponse-container">
-                    Resposta Correta: <input type="text" className="col-2 m-1  responseQuestInput" placeholder="Ex: 1"/>
+                    Resposta Correta: <input type="number" min={1} max={4} className="col-2 m-1  responseQuestInput" placeholder="Ex: 1"/>
                   </div>
                 </section> 
                 <hr />
@@ -172,8 +185,7 @@ export default function Quiz(){
           </>
         )}
        
-      </section>
-      
+      </section> 
     </main>
   )
 }
