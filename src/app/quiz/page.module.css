@@ -1,0 +1,20 @@
+.createQuizContainer {
+  min-height: 89.4vh;
+  padding: 3rem;
+}
+
+.createQuizForm {
+  display: flex;
+  padding: 1.5rem;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.showQuests {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  padding: 1.5rem;
+  overflow-y: auto;
+  max-height: 84vh;
+}

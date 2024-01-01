@@ -6,6 +6,7 @@ export interface Quizz {
   description: string;
   questions: Question[]; // Array de perguntas no quiz
   createdBy: string; // Nome do usuário que criou o quiz
+  time?:number
 }
 
 // Interface Question
