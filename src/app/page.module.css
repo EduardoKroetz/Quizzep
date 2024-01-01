@@ -1,0 +1,21 @@
+.quizzes {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+}
+
+.quiz {
+  background-color: white;
+  border-radius: 5px;
+  min-height: 300px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
+
+}
+
+.quiz span {
+  font-weight: 600;
+}

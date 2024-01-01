@@ -6,4 +6,6 @@
 
 main {
   background-color: rgba(128, 128, 128, 0.287);
+  min-height: 89.4vh;
+  padding: 3rem;
 }
