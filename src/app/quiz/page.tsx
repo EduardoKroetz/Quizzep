@@ -4,7 +4,7 @@
 import { ChangeEvent, useState } from "react"
 import styles from "./page.module.css"
 import { Question } from "@/interfaces/interfaces"
-
+import "./style.css"
 
 export default function Quiz(){
   const [title,setTitle] = useState('')
@@ -15,12 +15,12 @@ export default function Quiz(){
   const [renderQuestsState,setRenderQuestsState] = useState(false)
   const [questsArr,setQuestsArr] = useState([])
   
-  function saveQuestInArr(){
-    let arrQuests : Question[] = []
-    for(let i =0;i<qtdQuests;i++){
-      const quest: HTMLInputElement | null = document.querySelector(`input #question-${i + 1}`)
-      if (quest){
-        arrQuests = [...arrQuests, quest]
+  function createNewQuizz(){
+    for (let i=0;i<qtdQuests;i++){
+      const questHtml: HTMLInputElement  | null= document.querySelector(`quest-${i} > input`) 
+      const responses: NodeListOf<Element> | null = document.querySelectorAll(`quest-${i} > .responses-container > 'input[data-response]`) 
+      if (questHtml && responses){
+        const quest = questHtml.value
       }
     }
   }
@@ -63,8 +63,9 @@ export default function Quiz(){
         </section>
         <section>
           <label htmlFor="timeQuiz">Tempo do Quiz(segundos)</label>
-          <input type="text" id="timeQuiz"
+          <input type="number" id="timeQuiz"
           className="form-control"
+          min={15}
           value={timeQuiz}
           onChange={(ev)=> {setTimeQuiz(+ev.target.value)
           setRenderQuestsState(false)}}/>
@@ -82,20 +83,27 @@ export default function Quiz(){
         {renderQuestsState && (
           <>
             {Array.from({length: qtdQuests},(_,index) => (
-              <section key={index}>
-                <label htmlFor={`question-${index + 1}`}>Pergunta {index + 1}</label>
-                <input
-                  type="text"
-                  id={`question-${index + 1}`}
-                  className="form-control"
-                />
-                <div className="row m-0 p-0">
-                  <input type="text" className="col-3 responseQuestInput"/>
-                  <input type="text" className="col-3 responseQuestInput"/>
-                  <input type="text" className="col-3 responseQuestInput"/>
-                  <input type="text" className="col-3 responseQuestInput"/>
-                </div>
-              </section>  
+              <>
+                <section key={index} className={`quest-${index}`}>
+                  <label htmlFor={`question-${index + 1}`}>Pergunta {index + 1}</label>
+                  <input
+                    type="text"
+                    id={`question-${index + 1}`}
+                    className="form-control"
+                  />
+                  Respostas(1,2,3,4)
+                  <div className="row responses-container m-0 p-0">
+                    <input type="text" data-response="1" className="col-2 m-1 responseQuestInput"/>
+                    <input data-response="2" type="text" className="col-2 m-1  responseQuestInput"/>
+                    <input type="text" data-response="3" className="col-2 m-1  responseQuestInput"/>
+                    <input type="text" data-response="4" className="col-2 m-1  responseQuestInput"/>
+                  </div>
+                  <div>
+                    Resposta Correta: <input type="text" className="col-2 m-1  responseQuestInput" placeholder="Ex: 1"/>
+                  </div>
+                </section> 
+                <hr />
+              </>
             ))}
             <button type="button" className="btn btn-success">Criar Quiz</button>
           </>
