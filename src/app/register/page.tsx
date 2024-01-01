@@ -2,12 +2,13 @@
 
 import ErrorToast from "@/components/ErrorToast";
 import SuccessToast from "@/components/SuccessToast";
-import { FormEvent, useState } from "react";
+import { Dispatch, FormEvent, SetStateAction, useState } from "react";
 import styles from "./page.module.css"
 import Link from "next/link";
-import { User } from "../../classes/classes";
+import { User } from "../../classes/User";
 import { UserInterface } from "../../interfaces/interfaces";
 import { useAuth } from "@/hooks/useAuth";
+import { useUser } from "@/hooks/useUsers";
 
 
 
@@ -21,6 +22,7 @@ export default function Register(){
   const [toastErrorIsOpen,setToastErrorIsOpen] = useState(false)
 
   const { setIsAuthenticated } = useAuth()
+  const {user,setUser}  = useUser() as {user:UserInterface,setUser:Dispatch<SetStateAction<UserInterface>>}
 
   async function handlerRegister(ev:FormEvent){
     ev.preventDefault()
@@ -44,7 +46,7 @@ export default function Register(){
     const { id }= await response.json()
     newUser.id = id
 
-    localStorage.setItem('user',JSON.stringify(newUser))
+    setUser(newUser)
     setIsAuthenticated(true)
     
     setToastSucessIsOpen(true)

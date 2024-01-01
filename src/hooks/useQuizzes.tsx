@@ -1,12 +1,12 @@
 // src/hooks/useQuizzes
 "use client"
 
-import { Quizz } from "@/interfaces/interfaces";
+import { QuizzInterface } from "@/interfaces/interfaces";
 import React, { createContext, Dispatch, ReactNode, SetStateAction, useContext, useEffect, useState } from "react";
 
 interface QuizzContextProps {
-  quizzes: Quizz[] | undefined;
-  setQuizzes: Dispatch<SetStateAction<Quizz[] | undefined>>
+  quizzes: QuizzInterface[] | undefined;
+  setQuizzes: Dispatch<SetStateAction<QuizzInterface[] | undefined>>
 }
 
 const QuizzesContext = createContext<QuizzContextProps>({quizzes:undefined,setQuizzes:()=> {}})
@@ -14,11 +14,11 @@ const QuizzesContext = createContext<QuizzContextProps>({quizzes:undefined,setQu
 export const QuizzesContextProvider = (props:{
   children:ReactNode
 })=>{
-  const [quizzes,setQuizzes] = useState<Quizz[] | undefined>()
+  const [quizzes,setQuizzes] = useState<QuizzInterface[] | undefined>()
 
   useEffect(()=>{
     const fetchQuizzes = async() =>{
-      const quizzes : Quizz[] = await fetch("http://localhost:3001/quizzes").then(res => res.json())
+      const quizzes : QuizzInterface[] = await fetch("http://localhost:3001/quizzes").then(res => res.json())
       setQuizzes(quizzes)
     }
 

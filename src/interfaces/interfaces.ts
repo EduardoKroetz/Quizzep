@@ -1,6 +1,6 @@
 // Interface Quizz
-export interface Quizz {
-  id: string; 
+export interface QuizzInterface {
+  id?: number; 
   title: string; 
   category: string; // Categoria do quiz (ex: Matemática, Ciências, etc.)
   description: string;
@@ -11,7 +11,6 @@ export interface Quizz {
 
 // Interface Question
 export interface Question {
-  id: string;
   text: string; 
   options: string[]; // Array de opções de resposta
   correctOption: number; // Índice da opção correta
@@ -24,5 +23,5 @@ export interface UserInterface {
   name: string;
   email: string; 
   password: string;
-  quizzes: Quizz[]; // Array de quizzes criados pelo usuário
+  quizzes: QuizzInterface[]; // Array de quizzes criados pelo usuário
 }

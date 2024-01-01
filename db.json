@@ -15,5 +15,26 @@
       "id": 1
     }
   ],
-  "quizzes": []
+  "quizzes": [
+    {
+      "title":"abelhas",
+      "category":"insetos",
+      "description":"abelhas no mundo",
+      "id":0,
+      "questions":[
+        {
+          "text":"Qual o tipo mais comum de abelha na America?",
+          "options":["Africana","americana","japonesa","brasileira"],
+          "correctOption":2
+        },
+        {
+          "text":"Qual o tipo mais comum de abelha no Japao?",
+          "options":["Africana","americana","japonesa","brasileira"],
+          "correctOption":3
+        }
+      ]
+  
+    }
+  ]
 }
+
