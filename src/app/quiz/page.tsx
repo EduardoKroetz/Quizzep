@@ -25,11 +25,15 @@ export default function Quiz(){
   //Caso o usuário obtido do localStorage não exista, exibe a mensagem de "Não está logado!"
   if (!user){
     return (
-      <main className="d-flex justify-content-center align-items-center">
-        <h1>Você não está logado!</h1>
-        <Link href={"/login"}><button type="button" className="btn btn-info">Faça login</button></Link>
-        <Link href={"/register"}><button type="button" className="btn btn-info">Cadastre-se</button></Link>
-      </main>
+      <>
+        <Header/>
+        <main className="d-flex justify-content-center align-items-center flex-column">
+          <h1>Você não está logado!</h1>
+          <Link href={"/login"}><button type="button" className="btn btn-info my-4">Faça login</button></Link>
+          <Link href={"/register"}><button type="button" className="btn btn-info">Cadastre-se</button></Link>
+        </main>
+      </>
+  
     )
   }
 
