@@ -4,7 +4,7 @@
 import { QuizzInterface } from "@/interfaces/interfaces";
 import React, { createContext, Dispatch, ReactNode, SetStateAction, useContext, useEffect, useState } from "react";
 
-interface QuizzContextProps {
+export interface QuizzContextProps {
   quizzes: QuizzInterface[] | undefined;
   setQuizzes: Dispatch<SetStateAction<QuizzInterface[] | undefined>>
 }

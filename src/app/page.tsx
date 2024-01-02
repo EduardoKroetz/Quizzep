@@ -26,7 +26,7 @@ export default function Home() {
               <p><span>Criado por:</span> {quiz.createdBy}</p>
             </div>
             <div>
-              <Link href={`/quiz/${quiz.id}`}><button type="button" className="btn btn-success">Jogar</button></Link>
+              <Link href={`/quizzes/${quiz.id}`}><button type="button" className="btn btn-success">Jogar</button></Link>
             </div>   
           </section>
         ))}
