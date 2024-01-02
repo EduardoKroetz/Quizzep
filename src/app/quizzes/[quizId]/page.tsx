@@ -1,4 +1,5 @@
 "use client"
+//src/app/quizzes/[quizId]/page.tsx
 
 import Header from "@/components/Header";
 import QuizQuests from "@/components/QuizQuests";

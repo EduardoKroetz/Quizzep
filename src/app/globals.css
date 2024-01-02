@@ -18,3 +18,37 @@ main {
   margin-bottom: 1rem;
 }
 
+.searchContainer {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0px 0px 15px 15px;
+  padding: 5px;
+  left: 50%;
+  transform: translate(-50%,-0%);
+}
+
+.searchContainer > table{
+  flex: 1;
+}
+
+.searchContainer > table > tr {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 90%;
+  
+}
+
+.searchContainer > div {
+  padding: 3px;
+  cursor: pointer;
+  border: 1px solid gray;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  border-radius: 3px ;
+
+}

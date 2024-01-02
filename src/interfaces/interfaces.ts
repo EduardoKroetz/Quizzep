@@ -1,3 +1,5 @@
+// src/interfaces/interfaces.ts
+
 // Interface Quizz
 export interface QuizzInterface {
   id?: number; 

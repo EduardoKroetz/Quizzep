@@ -1,3 +1,5 @@
+//src/app/classes/Quizz.ts
+
 import { Question, QuizzInterface } from "@/interfaces/interfaces";
 
 export default class Quizz implements QuizzInterface{

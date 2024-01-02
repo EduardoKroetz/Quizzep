@@ -1,4 +1,6 @@
 "use client"
+//src/app/account/page.tsx
+
 import Header from "@/components/Header";
 import { useUser } from "@/hooks/useUsers";
 import Link from "next/link";
@@ -13,6 +15,7 @@ export default function Quiz(){
   function logOut(){
     localStorage.removeItem('user')
     setIsAuthenticated(false)
+    window.open("../login", "_self")
   }
 
   if (!user){

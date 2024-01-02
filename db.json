@@ -74,156 +74,228 @@
       "password": "123",
       "quizzes": [],
       "id": 1
+    },
+    {
+      "name": "Eduardo Oscar Wagner Kroetz",
+      "email": "eduardokroetz0@gmail.com",
+      "password": "1",
+      "quizzes": [],
+      "id": 2
     }
   ],
   "quizzes": [
+    
     {
-      "title": "abelhas",
-      "category": "insetos",
-      "description": "abelhas no mundo",
-      "id": 0,
+      "title": " Quiz de Informática:",
+      "category": "informática",
+      "description": "Quiz sobre informática",
       "questions": [
         {
-          "text": "Qual o tipo mais comum de abelha na America?",
+          "text": "Qual é a função principal de um sistema operacional?",
           "options": [
-            "Africana",
-            "americana",
-            "japonesa",
-            "brasileira"
-          ],
-          "correctOption": 2
-        },
-        {
-          "text": "Qual o tipo mais comum de abelha no Japao?",
-          "options": [
-            "Africana",
-            "americana",
-            "japonesa",
-            "brasileira"
-          ],
-          "correctOption": 3
-        }
-      ]
-    },
-    {
-      "title": "Quiz sobre lógica de programação",
-      "category": "TI",
-      "description": "Quiz sobre lógica de programação, conceitos básicos.",
-      "questions": [
-        {
-          "text": "O que é o 'for'",
-          "options": [
-            "estrutura de repetição",
-            "estrutura condicional",
-            "estrutura 'para'",
-            "looping infinito"
+            "Executar programas",
+            "Fazer café",
+            "Navegar na internet",
+            "Fazer chamadas telefônicas"
           ],
           "correctOption": 1
         },
         {
-          "text": "O que é a 'if'",
+          "text": "O que significa a sigla \"URL\"?",
           "options": [
-            "estrutura de repetição",
-            "estrutura condicional",
-            "quer dizer 'se'",
-            "ES6"
-          ],
-          "correctOption": 2
-        }
-      ],
-      "createdBy": "Eduardo",
-      "time": 60,
-      "id": 1
-    },
-    {
-      "title": "a",
-      "category": "a",
-      "description": "a",
-      "questions": [
-        {
-          "text": "a",
-          "options": [
-            "1",
-            "2",
-            "3",
-            "4"
+            "Universal Resource Locator",
+            "Uniform Retrieval Locator",
+            "Unified Resource Locator",
+            "Unique Retrieval Locator"
           ],
           "correctOption": 1
         },
         {
-          "text": "b",
+          "text": "O que é um arquivo com a extensão \".jpg\"?",
           "options": [
-            "1",
-            "2",
-            "3",
-            "4"
-          ],
-          "correctOption": 2
-        }
-      ],
-      "createdBy": "Eduardo",
-      "time": 60,
-      "id": 2
-    },
-    {
-      "title": "b",
-      "category": "b",
-      "description": "b",
-      "questions": [
-        {
-          "text": "b",
-          "options": [
-            "1",
-            "2",
-            "3",
-            "4"
-          ],
-          "correctOption": 2
-        },
-        {
-          "text": "c",
-          "options": [
-            "1",
-            "2",
-            "3",
-            "4"
+            "Documento de texto",
+            "Planilha eletrônica",
+            "Imagem",
+            "Vídeo"
           ],
           "correctOption": 3
-        }
-      ],
-      "createdBy": "Eduardo",
-      "time": 60,
-      "id": 3
-    },
-    {
-      "title": "Letras",
-      "category": "alfabeto",
-      "description": "Sobre o alfabeto",
-      "questions": [
+        },
         {
-          "text": "Qual é a posição de A no alfabeto?",
+          "text": "Qual linguagem de programação é conhecida por ser utilizada no desenvolvimento web e possui bibliotecas como jQuery e React?",
           "options": [
-            "1",
-            "7",
-            "19",
-            "27"
+            "Python",
+            "Java",
+            "JavaScript",
+            " C++"
+          ],
+          "correctOption": 3
+        },
+        {
+          "text": " O que significa a sigla \"HTML\"?",
+          "options": [
+            "HyperText Markup Language",
+            " High-Level Text Management Language",
+            "Hyperlink and Text Manipulation Language",
+            "Hypertext Transfer Markup Language"
           ],
           "correctOption": 1
         },
         {
-          "text": "Qual a posição de Z no alfabeto?",
+          "text": "Qual é o propósito do comando \"Ctrl + C\" em um computador?",
           "options": [
-            "5",
-            "9",
-            "26",
-            "15"
+            "Copiar texto",
+            "Cortar texto",
+            "Colar texto",
+            "Desfazer a última ação"
           ],
-          "correctOption": 3
+          "correctOption": 1
+        },
+        {
+          "text": "Qual é a função do protocolo de internet \"TCP/IP\"?",
+          "options": [
+            "Transferência de arquivos",
+            "Comunicação entre dispositivos em uma rede",
+            "Controle de tráfego de veículos",
+            "Gerenciamento de energia em computadores"
+          ],
+          "correctOption": 2
+        },
+        {
+          "text": "Qual é a principal função de um banco de dados?",
+          "options": [
+            " Navegar na internet",
+            " Armazenar e gerenciar dados de forma organizada",
+            " Executar programas",
+            "Reproduzir vídeos"
+          ],
+          "correctOption": 2
         }
       ],
-      "createdBy": "Eduardo",
-      "time": 15,
-      "id": 4
+      "createdBy": "Eduardo Oscar Wagner Kroetz",
+      "time": 1000,
+      "id": 5
+    },
+    {
+      "title": "Conceitos gerais para testar o conhecimento",
+      "category": "geral",
+      "description": "Teste seus conhecimentos em diversos assuntos!",
+      "questions": [
+        {
+          "text": "Qual é a capital do Japão?",
+          "options": [
+            "Pequim",
+            "Seul",
+            "Tóquio",
+            "Bangcoc"
+          ],
+          "correctOption": 2
+        },
+        {
+          "text": "Quem escreveu 'Dom Quixote'?",
+          "options": [
+            "William Shakespeare",
+            "Miguel de Cervantes",
+            "Fyodor Dostoevsky",
+            "Jane Austen"
+          ],
+          "correctOption": 1
+        },
+        {
+          "text": "Qual é o maior planeta do sistema solar?",
+          "options": [
+            "Terra",
+            "Júpiter",
+            "Marte",
+            "Vênus"
+          ],
+          "correctOption": 1
+        },
+        {
+          "text": "Quem foi o primeiro presidente dos Estados Unidos?",
+          "options": [
+            "Thomas Jefferson",
+            "Abraham Lincoln",
+            "George Washington",
+            "John F. Kennedy"
+          ],
+          "correctOption": 2
+        },
+        {
+          "text": "Qual é o número atômico do oxigênio?",
+          "options": [
+            "6",
+            "8",
+            "14",
+            "20"
+          ],
+          "correctOption": 1
+        }
+      ],
+      "createdBy": "Seu Nome",
+      "time": 900,
+      "id": 7
+    },
+    {
+      "title": "Quiz Aleatório 2:",
+      "category": "geral",
+      "description": "Mais perguntas para testar seus conhecimentos!",
+      "questions": [
+        {
+          "text": "Qual é a montanha mais alta do mundo?",
+          "options": [
+            "Monte Everest",
+            "Monte McKinley",
+            "Monte Kilimanjaro",
+            "Monte Fuji"
+          ],
+          "correctOption": 0
+        },
+        {
+          "text": "Quem pintou a Mona Lisa?",
+          "options": [
+            "Pablo Picasso",
+            "Vincent van Gogh",
+            "Leonardo da Vinci",
+            "Claude Monet"
+          ],
+          "correctOption": 2
+        },
+        {
+          "text": "Em que ano a Primeira Guerra Mundial começou?",
+          "options": [
+            "1914",
+            "1917",
+            "1919",
+            "1921"
+          ],
+          "correctOption": 0
+        },
+        {
+          "text": "Qual é o país com a maior área territorial do mundo?",
+          "options": [
+            "Canadá",
+            "Rússia",
+            "China",
+            "Estados Unidos"
+          ],
+          "correctOption": 1
+        },
+        {
+          "text": "Quem é conhecido como 'O Príncipe das Trevas'?",
+          "options": [
+            "David Bowie",
+            "Ozzy Osbourne",
+            "Alice Cooper",
+            "Marilyn Manson"
+          ],
+          "correctOption": 1
+        }
+      ],
+      "createdBy": "Seu Nome",
+      "time": 900,
+      "id": 8
     }
+    
+    
   ]
 }

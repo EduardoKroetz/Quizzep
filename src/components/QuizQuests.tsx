@@ -1,3 +1,5 @@
+// src/components/QuizQuests.tsx
+
 import { QuizzInterface } from "@/interfaces/interfaces";
 import { useEffect, useState } from "react";
 

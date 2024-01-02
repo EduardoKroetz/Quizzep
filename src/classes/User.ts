@@ -1,3 +1,5 @@
+//src/app/classes/User.ts
+
 import { QuizzInterface} from "../interfaces/interfaces";
 import { UserInterface } from "../interfaces/interfaces";
 

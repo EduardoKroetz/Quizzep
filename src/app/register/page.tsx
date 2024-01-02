@@ -1,4 +1,5 @@
 "use client"
+//src/app/register/page.tsx
 
 import ErrorToast from "@/components/ErrorToast";
 import SuccessToast from "@/components/SuccessToast";
