@@ -9,3 +9,12 @@ main {
   min-height: 89.4vh;
   padding: 3rem;
 }
+
+.section {
+  border-radius: 5px;
+  min-height: 1px;
+  background-color: rgba(128, 128, 128, 0.287);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+

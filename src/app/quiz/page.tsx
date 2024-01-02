@@ -9,6 +9,7 @@ import { useUser } from "@/hooks/useUsers"
 import Quizz from "@/classes/Quizz"
 import Link from "next/link"
 import SuccessToast from "@/components/SuccessToast"
+import Header from "@/components/Header"
 
 export default function Quiz(){
   const [title,setTitle] = useState('')
@@ -24,12 +25,11 @@ export default function Quiz(){
   //Caso o usuário obtido do localStorage não exista, exibe a mensagem de "Não está logado!"
   if (!user){
     return (
-      <>
+      <main className="d-flex justify-content-center align-items-center">
         <h1>Você não está logado!</h1>
         <Link href={"/login"}><button type="button" className="btn btn-info">Faça login</button></Link>
-        <hr />
         <Link href={"/register"}><button type="button" className="btn btn-info">Cadastre-se</button></Link>
-      </>
+      </main>
     )
   }
 
@@ -122,80 +122,83 @@ export default function Quiz(){
 
 
   return (
-    <main className={`${styles.createQuizContainer} row m-0 p-0`}>
-      <form onSubmit={(ev)=> renderQuests(ev)} className={`${styles.createQuizForm} createQuizForm col-12 col-md-6 col-lg-4`} >
-        <section>
-          <label htmlFor="title">Título</label>
-          <input type="text" id="title"
-          className="form-control"
-          value={title}
-          onChange={(ev)=> {setTitle(ev.target.value)
-          setRenderQuestsState(false)}} required
-          />
-        </section>
-        <section>
-          <label htmlFor="category">Categoria</label>
-          <input type="text" id="category"
-          className="form-control"
-          value={category}
-          onChange={(ev)=> {setCategory(ev.target.value)
-          setRenderQuestsState(false)}} required/>
-        </section>
-        <section>
-          <label htmlFor="description">Descrição</label> <br />
-          <textarea value={description} id="description" className="form-control" cols={40} rows={5} onChange={(ev)=>{setDescription(ev.target.value)
-          setRenderQuestsState(false)}} required></textarea>
-        </section>
-        <section>
-          <label htmlFor="timeQuiz">Tempo do Quiz(segundos)</label>
-          <input type="number" id="timeQuiz"
-          className="form-control"
-          min={15}
-          value={timeQuiz}
-          onChange={(ev)=> {setTimeQuiz(+ev.target.value)
-          setRenderQuestsState(false)}} required/>
-        </section>
-        <section>
-          <label htmlFor="qtdQuests">Quantidade de Perguntas</label>
-          <input type="number" id="qtdQuests" min={2} max={20}
-          className="form-control"
-          value={qtdQuests}
-          onChange={(ev)=>  validateQtdQuests(ev)} required/>
-        </section>
-        <button type="submit" className="btn btn-info">Carregar perguntas</button>
-      </form>
-      <section className={`${styles.showQuests} col-md-6 col-12 col-lg-8`}>
-        {renderQuestsState && (
-          <> {/* Itera sobre a quantidade de quests e renderiza os componentes */}
-            {Array.from({length: qtdQuests},(_,index) => (
-              <div key={`question-container-${index}`}>
-                <section key={index} className={`quest-${index}`}>
-                  <label htmlFor={`question`}>Pergunta {index + 1}</label>
-                  <input
-                    type="text"
-                    id={`question`}
-                    className="form-control"
-                  />
-                  Respostas(1,2,3,4)
-                  <div className="row responses-container m-0 p-0">
-                    <input type="text" className="col-2 m-1 responseQuestInput"/>
-                    <input type="text" className="col-2 m-1  responseQuestInput"/>
-                    <input type="text" className="col-2 m-1  responseQuestInput"/>
-                    <input type="text" className="col-2 m-1  responseQuestInput"/>
-                  </div>
-                  <div className="rightResponse-container">
-                    Resposta Correta: <input type="number" min={1} max={4} className="col-2 m-1  responseQuestInput" placeholder="Ex: 1"/>
-                  </div>
-                </section> 
-                <hr />
-              </div>
-            ))}
-            <button type="button" className="btn btn-success" onClick={createNewQuizz}>Criar Quiz</button>
-          </>
-        )}
-       
-      </section> 
-      <SuccessToast text="Quiz criado com sucesso!"  setToastIsOpen={setToastSucessIsOpen} toastIsOpen={toastSucessIsOpen}/>
-    </main>
+    <>
+      <Header/>
+      <main className={`${styles.createQuizContainer} row m-0 p-0`}>
+        <form onSubmit={(ev)=> renderQuests(ev)} className={`${styles.createQuizForm} createQuizForm col-12 col-md-6 col-lg-4`} >
+          <section>
+            <label htmlFor="title">Título</label>
+            <input type="text" id="title"
+            className="form-control"
+            value={title}
+            onChange={(ev)=> {setTitle(ev.target.value)
+            setRenderQuestsState(false)}} required
+            />
+          </section>
+          <section>
+            <label htmlFor="category">Categoria</label>
+            <input type="text" id="category"
+            className="form-control"
+            value={category}
+            onChange={(ev)=> {setCategory(ev.target.value)
+            setRenderQuestsState(false)}} required/>
+          </section>
+          <section>
+            <label htmlFor="description">Descrição</label> <br />
+            <textarea value={description} id="description" className="form-control" cols={40} rows={5} onChange={(ev)=>{setDescription(ev.target.value)
+            setRenderQuestsState(false)}} required></textarea>
+          </section>
+          <section>
+            <label htmlFor="timeQuiz">Tempo do Quiz(segundos)</label>
+            <input type="number" id="timeQuiz"
+            className="form-control"
+            min={15}
+            value={timeQuiz}
+            onChange={(ev)=> {setTimeQuiz(+ev.target.value)
+            setRenderQuestsState(false)}} required/>
+          </section>
+          <section>
+            <label htmlFor="qtdQuests">Quantidade de Perguntas</label>
+            <input type="number" id="qtdQuests" min={2} max={20}
+            className="form-control"
+            value={qtdQuests}
+            onChange={(ev)=>  validateQtdQuests(ev)} required/>
+          </section>
+          <button type="submit" className="btn btn-info">Carregar perguntas</button>
+        </form>
+        <section className={`${styles.showQuests} col-md-6 col-12 col-lg-8`}>
+          {renderQuestsState && (
+            <> {/* Itera sobre a quantidade de quests e renderiza os componentes */}
+              {Array.from({length: qtdQuests},(_,index) => (
+                <div key={`question-container-${index}`}>
+                  <section key={index} className={`quest-${index}`}>
+                    <label htmlFor={`question`}>Pergunta {index + 1}</label>
+                    <input
+                      type="text"
+                      id={`question`}
+                      className="form-control"
+                    />
+                    Respostas(1,2,3,4)
+                    <div className="row responses-container m-0 p-0">
+                      <input type="text" className="col-2 m-1 responseQuestInput"/>
+                      <input type="text" className="col-2 m-1  responseQuestInput"/>
+                      <input type="text" className="col-2 m-1  responseQuestInput"/>
+                      <input type="text" className="col-2 m-1  responseQuestInput"/>
+                    </div>
+                    <div className="rightResponse-container">
+                      Resposta Correta: <input type="number" min={1} max={4} className="col-2 m-1  responseQuestInput" placeholder="Ex: 1"/>
+                    </div>
+                  </section> 
+                  <hr />
+                </div>
+              ))}
+              <button type="button" className="btn btn-success" onClick={createNewQuizz}>Criar Quiz</button>
+            </>
+          )}
+        
+        </section> 
+        <SuccessToast text="Quiz criado com sucesso!"  setToastIsOpen={setToastSucessIsOpen} toastIsOpen={toastSucessIsOpen}/>
+      </main>
+    </>
   )
 }

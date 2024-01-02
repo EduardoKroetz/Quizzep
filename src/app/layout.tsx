@@ -25,7 +25,6 @@ export default function RootLayout({
         <AuthContextProvider>
           <QuizzesContextProvider>
             <UserContextProvider>
-              <Header/>
               {children}
             </UserContextProvider>
           </QuizzesContextProvider>

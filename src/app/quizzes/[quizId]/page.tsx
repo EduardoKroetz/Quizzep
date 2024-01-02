@@ -1,9 +1,9 @@
 "use client"
 
+import Header from "@/components/Header";
 import QuizQuests from "@/components/QuizQuests";
 import { QuizzContextProps, useQuizzes } from "@/hooks/useQuizzes";
 import Link from "next/link";
-
 
 interface ParamsQuiz{
   params: {
@@ -34,13 +34,16 @@ export default function Quiz({ params :{ quizId}}: ParamsQuiz){
 
 
   return (
-    <main>
-      <h1>{quiz?.title.toUpperCase()}</h1>
-      <QuizQuests quiz={quiz}/>
-      <section>
-          <Link href={"../"}><button type="button" className="btn btn-danger me-4">Sair</button></Link>
-          <button type="button" className="btn btn-success">Próxima Questão</button>
-      </section>
-    </main>
+    <>
+      <Header/>
+      <main>
+        <h1>{quiz?.title.toUpperCase()}</h1>
+        <QuizQuests quiz={quiz}/>
+        <section>
+            <Link href={"../"}><button type="button" className="btn btn-danger me-4">Sair</button></Link>
+        </section>
+      </main>
+    </>
+    
   )
 }
