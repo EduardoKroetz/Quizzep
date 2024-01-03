@@ -188,7 +188,7 @@
             "Tóquio",
             "Bangcoc"
           ],
-          "correctOption": 2
+          "correctOption": 3
         },
         {
           "text": "Quem escreveu 'Dom Quixote'?",
@@ -198,7 +198,7 @@
             "Fyodor Dostoevsky",
             "Jane Austen"
           ],
-          "correctOption": 1
+          "correctOption": 2
         },
         {
           "text": "Qual é o maior planeta do sistema solar?",
@@ -208,7 +208,7 @@
             "Marte",
             "Vênus"
           ],
-          "correctOption": 1
+          "correctOption": 2
         },
         {
           "text": "Quem foi o primeiro presidente dos Estados Unidos?",
@@ -218,7 +218,7 @@
             "George Washington",
             "John F. Kennedy"
           ],
-          "correctOption": 2
+          "correctOption": 3
         },
         {
           "text": "Qual é o número atômico do oxigênio?",
@@ -228,7 +228,7 @@
             "14",
             "20"
           ],
-          "correctOption": 1
+          "correctOption": 2
         }
       ],
       "createdBy": "Seu Nome",
@@ -248,7 +248,7 @@
             "Monte Kilimanjaro",
             "Monte Fuji"
           ],
-          "correctOption": 0
+          "correctOption": 1
         },
         {
           "text": "Quem pintou a Mona Lisa?",
@@ -258,7 +258,7 @@
             "Leonardo da Vinci",
             "Claude Monet"
           ],
-          "correctOption": 2
+          "correctOption": 3
         },
         {
           "text": "Em que ano a Primeira Guerra Mundial começou?",
@@ -268,7 +268,7 @@
             "1919",
             "1921"
           ],
-          "correctOption": 0
+          "correctOption": 1
         },
         {
           "text": "Qual é o país com a maior área territorial do mundo?",
@@ -278,7 +278,7 @@
             "China",
             "Estados Unidos"
           ],
-          "correctOption": 1
+          "correctOption": 2
         },
         {
           "text": "Quem é conhecido como 'O Príncipe das Trevas'?",
@@ -288,13 +288,74 @@
             "Alice Cooper",
             "Marilyn Manson"
           ],
-          "correctOption": 1
+          "correctOption": 2
         }
       ],
       "createdBy": "Seu Nome",
       "time": 900,
       "id": 8
+    },
+    {
+      "title": "Quiz Aleatório 4:",
+      "category": "geral",
+      "description": "Desafie-se com mais perguntas interessantes!",
+      "questions": [
+        {
+          "text": "Qual é o segundo planeta do sistema solar a partir do sol?",
+          "options": [
+            "Vênus",
+            "Marte",
+            "Júpiter",
+            "Saturno"
+          ],
+          "correctOption": 1
+        },
+        {
+          "text": "Quem é o autor da obra 'Cem Anos de Solidão'?",
+          "options": [
+            "Gabriel García Márquez",
+            "Mario Vargas Llosa",
+            "Isabel Allende",
+            "Julio Cortázar"
+          ],
+          "correctOption": 1
+        },
+        {
+          "text": "Quantos continentes existem no mundo?",
+          "options": [
+            "5",
+            "6",
+            "7",
+            "8"
+          ],
+          "correctOption": 1
+        },
+        {
+          "text": "Qual é o maior mamífero marinho?",
+          "options": [
+            "Baleia-azul",
+            "Orca",
+            "Tubarão-baleia",
+            "Golfinho"
+          ],
+          "correctOption": 1
+        },
+        {
+          "text": "Quem foi o primeiro homem a pisar na Lua?",
+          "options": [
+            "Neil Armstrong",
+            "Buzz Aldrin",
+            "Yuri Gagarin",
+            "John Glenn"
+          ],
+          "correctOption": 1
+        }
+      ],
+      "createdBy": "Seu Nome",
+      "time": 900,
+      "id": 10
     }
+    
     
     
   ]

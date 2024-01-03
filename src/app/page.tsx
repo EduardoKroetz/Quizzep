@@ -25,7 +25,7 @@ export default function Home() {
                 <h4>{quiz.title}</h4>
                 <p><span>Categoria:</span> {quiz.category}</p>
                 <p><span>Descrição:</span> {quiz.description}</p>
-                <p><span>Tempo do quiz:</span>{quiz.time}</p>
+                <p><span>Tempo do quiz:</span>{quiz.time}s</p>
                 <p><span>Criado por:</span> {quiz.createdBy}</p>
               </div>
               <div>
