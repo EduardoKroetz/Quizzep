@@ -1,90 +1,7 @@
 {
   "users": [
-    {
-      "name": "Eduardo",
-      "email": "eduardokroetz0@gmail.com",
-      "password": "123",
-      "quizzes": [
-        {
-          "title": "Quiz sobre lógica de programação",
-          "category": "TI",
-          "description": "Quiz sobre lógica de programação, conceitos básicos.",
-          "questions": [
-            {
-              "text": "O que é o 'for'",
-              "options": [
-                "estrutura de repetição",
-                "estrutura condicional",
-                "estrutura 'para'",
-                "looping infinito"
-              ],
-              "correctOption": 1
-            },
-            {
-              "text": "O que é a 'if'",
-              "options": [
-                "estrutura de repetição",
-                "estrutura condicional",
-                "quer dizer 'se'",
-                "ES6"
-              ],
-              "correctOption": 2
-            }
-          ],
-          "createdBy": "Eduardo",
-          "time": 60,
-          "id": 1
-        },
-        {
-          "title": "b",
-          "category": "b",
-          "description": "b",
-          "questions": [
-            {
-              "text": "b",
-              "options": [
-                "1",
-                "2",
-                "3",
-                "4"
-              ],
-              "correctOption": 2
-            },
-            {
-              "text": "c",
-              "options": [
-                "1",
-                "2",
-                "3",
-                "4"
-              ],
-              "correctOption": 3
-            }
-          ],
-          "createdBy": "Eduardo",
-          "time": 60,
-          "id": 3
-        }
-      ],
-      "id": 0
-    },
-    {
-      "name": "Eduardo Oscar Wagner Kroetz",
-      "email": "eduardokroetz0@gmail.com",
-      "password": "123",
-      "quizzes": [],
-      "id": 1
-    },
-    {
-      "name": "Eduardo Oscar Wagner Kroetz",
-      "email": "eduardokroetz0@gmail.com",
-      "password": "1",
-      "quizzes": [],
-      "id": 2
-    }
   ],
   "quizzes": [
-    
     {
       "title": " Quiz de Informática:",
       "category": "informática",
@@ -171,7 +88,7 @@
           "correctOption": 2
         }
       ],
-      "createdBy": "Eduardo Oscar Wagner Kroetz",
+      "createdBy": "Pedro",
       "time": 1000,
       "id": 5
     },
@@ -231,7 +148,7 @@
           "correctOption": 2
         }
       ],
-      "createdBy": "Seu Nome",
+      "createdBy": "Matheus",
       "time": 900,
       "id": 7
     },
@@ -291,7 +208,7 @@
           "correctOption": 2
         }
       ],
-      "createdBy": "Seu Nome",
+      "createdBy": "Rafael",
       "time": 900,
       "id": 8
     },
@@ -351,12 +268,40 @@
           "correctOption": 1
         }
       ],
-      "createdBy": "Seu Nome",
+      "createdBy": "Lucas",
       "time": 900,
       "id": 10
+    },
+    {
+      "title": "Quiz sobre Filmes",
+      "category": "Cinema",
+      "description": "Teste seus conhecimentos sobre filmes clássicos e contemporâneos!",
+      "questions": [
+        {
+          "text": "Quem dirigiu o filme 'Cidadão Kane'?",
+          "options": [
+            "Alfred Hitchcock",
+            "Orson Welles",
+            "Stanley Kubrick",
+            "Quentin Tarantino"
+          ],
+          "correctOption": 1
+        },
+        {
+          "text": "Qual filme ganhou o Oscar de Melhor Filme em 2020?",
+          "options": [
+            "Parasita",
+            "1917",
+            "Nomadland",
+            "A Forma da Água"
+          ],
+          "correctOption": 2
+        }
+      ],
+      "createdBy": "João",
+      "time": 60,
+      "id": 101
     }
-    
-    
     
   ]
 }
