@@ -46,7 +46,7 @@ export default function Register(){
 
       <section className="col-12 col-md-6">
         <h1>Quizzep</h1>
-        <p>Entre com a sua conta para acessar os diversos quiz criados pela comunidade!</p>
+        <p>Entre com a sua conta para acessar os diversos quizzes criados pela comunidade!</p>
       </section>
 
       <form className={`${styles.loginForm} col-12 col-md-6`}  onSubmit={(ev)=> handlerLogin(ev)}>
